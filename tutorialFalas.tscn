@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://mapas/realBalao.png" type="Texture" id=3]
+
+[sub_resource type="Theme" id=1]
+
+[sub_resource type="BitmapFont" id=2]
+
+[node name="dialogoTutorial" type="Sprite"]
+position = Vector2( 247.705, 271.429 )
+scale = Vector2( 0.415625, 0.289216 )
+texture = ExtResource( 3 )
+
+[node name="DialogBox" type="NinePatchRect" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0.0196078, 0, 0, 0 )
+margin_left = -242.0
+margin_top = -240.0
+margin_right = 249.0
+margin_bottom = 80.0
+theme = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Text" type="RichTextLabel" parent="DialogBox"]
+margin_left = -16.3759
+margin_top = 15.5424
+margin_right = 152.624
+margin_bottom = 116.542
+rect_scale = Vector2( 3, 3 )
+custom_fonts/bold_italics_font = SubResource( 2 )
+text = "Teste"
+__meta__ = {
+"_edit_use_anchors_": false
+}
